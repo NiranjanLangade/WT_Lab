@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Toggleable Tabs</title>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h2>TY Subjects</h2>
+			<p>
+				Here are some subjects listed for third year of computer engineering
+				department
+			</p>
+			<ul class="nav nav-pills">
+				<li class="active">
+					<a href="#sub1" data-toggle="pill">WT</a>
+				</li>
+				<li>
+					<a href="#sub2" data-toggle="pill">CC</a>
+				</li>
+				<li>
+					<a href="#sub3" data-toggle="pill">SDAM</a>
+				</li>
+				<li>
+					<a href="#sub4" data-toggle="pill">DAA</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div id="sub1" class="tab-pane fade in active">
+					<h2>Web Technology</h2>
+					<p><b>Course Objective : </b></p>
+					<p><b>Syllabus : </b></p>
+				</div>
+				<div id="sub2" class="tab-pane fade">
+					<h2>Cloud Computing</h2>
+					<p><b>Course Objective : </b></p>
+					<p><b>Syllabus : </b></p>
+				</div>
+				<div id="sub3" class="tab-pane fade">
+					<h2>Software Design and Modelling</h2>
+					<p><b>Course Objective : </b></p>
+					<p><b>Syllabus : </b></p>
+				</div>
+				<div id="sub4" class="tab-pane fade">
+					<h2>Design & Analysis of Algorithm</h2>
+					<p><b>Course Objective : </b></p>
+					<p><b>Syllabus : </b></p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
