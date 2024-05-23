@@ -1,17 +1,16 @@
-import logo from "./logo.svg";
-import "./App.css";
 import React, { useState } from "react";
 import axios from "axios";
+import "./App.css";
 
 function App() {
 	const [units, setUnits] = useState("");
 	const [bill, setBill] = useState(null);
 
-	const handleChange = e => {
+	const handleInputChange = e => {
 		setUnits(e.target.value);
 	};
 
-	const calculateBill = async () => {
+	const handleCalculateBill = async () => {
 		try {
 			const response = await axios.get(
 				`http://localhost:8080/api/calculate?units=${units}`
@@ -24,14 +23,14 @@ function App() {
 
 	return (
 		<div className="App">
-			<h1>Electricity Bill Generator</h1>
+			<h1>Electricity Bill Calculator</h1>
 			<div>
 				<label>
-					Enter no. of units used :
-					<input type="numbers" value={units} onChange={handleChange} />
+					Enter units of electricity used:
+					<input type="number" value={units} onChange={handleInputChange} />
 				</label>
 			</div>
-			<button onClick={calculateBill}>Calculate Bill</button>
+			<button onClick={handleCalculateBill}>Calculate Bill</button>
 			{bill !== null && (
 				<div>
 					<h2>Your Bill: ${bill}</h2>
