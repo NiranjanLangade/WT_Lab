@@ -1,0 +1,36 @@
+/* src/App.css */
+.App {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+form label {
+	margin: 10px 0;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+table,
+th,
+td {
+	border: 1px solid black;
+}
+
+th,
+td {
+	padding: 10px;
+	text-align: center;
+}
